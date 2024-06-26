@@ -1,0 +1,248 @@
+/*geral*/
+*{
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+    a{
+        padding: 8px;
+    }
+}
+
+h1{
+    /*border: 1px solid red;*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+}    
+
+h2{
+     /*border: 1px solid red;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+
+h3{
+     /*border: 1px solid red;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    padding: 1%;
+}
+
+h4{
+     /*border: 1px solid red;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 549;
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;    
+}
+
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    text-align: end;
+    padding: 10px;
+}
+        
+/*Página Inicial*/
+#title{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background: url(./Imagem/foto01.ico) no-repeat center/cover;
+    backdrop-filter: blur(8px) ;
+    -webkit-backdrop-filter: blur(8px);
+
+    h1{
+        font-size: 86px;
+        padding-top: 200px;
+        text-align: center;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+#imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+#galvao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+        
+#wf{
+    padding: 2%;
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+                
+    h3{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 0 8%;
+        text-align: center;
+        padding: 2%;
+        }
+        h4{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 0 8%;
+            justify-content: right; 
+            align-items: center;
+            padding: 2%;
+        }
+}
+                        
+#contatoindex{
+    padding: 2%;
+}
+                            
+ /*Página de Contato*/                       
+#contato{
+    margin: 0;
+    height: 35vh;
+    width: 100%;
+    background: url(./Imagem/foto01.ico) no-repeat center/cover;
+    backdrop-filter: blur(10px) ;
+    -webkit-backdrop-filter: blur(8px);
+                            
+    h1{
+        font-size: 86px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    div{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#cont{
+    padding: 2%;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+}
+
+#wfcont{
+    padding: 2%;
+ h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+ }
+ p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+ }
+ form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+ }
+ input{
+    display: inline;
+    justify-content: center;
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8px;
+ }
+}
+
+/*Página de Serviços*/
+#paginic{
+    margin: 0;
+    height: 35vh;
+    width: 100%;
+    background: url(./Imagem/foto01.ico) no-repeat center/cover;
+    backdrop-filter: blur(8px) ;
+    -webkit-backdrop-filter: blur(8px);
+                            
+    h1{
+        font-size: 86px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    div{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#otherlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#otherlist2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}

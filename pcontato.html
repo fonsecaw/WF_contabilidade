@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wincler&Fonseca</title>
+    <!--Adicionando CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagem/icone.ico" type="image/x-icon">
+    <style>
+    </style>
+</head>
+<body>
+    <main>
+        <div id="contato">
+            <nav>
+                <!--Adiconando Menu-->
+                <a href="index.html">Página Inicial</a>
+                <a href="pservico.html">Serviços Prestados</a>
+                <a href="pcontato.html">Contato</a>
+            </nav>
+
+            <h1>Contato</h1>
+
+            <div>
+                <span style="
+                    background: rgb(109, 153, 172);
+                    width: 40%;
+                    height: 12px;"></span>
+            </div>
+        </div>
+
+        <div id="cont">
+            <p>Telefone: (15) 3267-5518 </p>
+            <p>Faça uma visita: Rua do Cruzeiro 80, Capela do Alto-SP.</p>
+            <p>Ou se preferir, clique no link abaixo para entrar em contato pelo Whatsapp.</p>
+        </div>
+        
+        <!--Adicionando botão-->
+        <div style="background-color: rgb(109, 153, 172);
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;">
+            <button>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=551532675518&text=Oi,%20estou%20com%20uma%20d%C3%BAvida...">Nosso Whatsapp!</a>
+            </button>
+        </div>
+        
+        <div id="wfcont">
+            <h3> Wincler & Fonseca - Dúvidas</h3>
+            <p>W&F entrará em contato assim que possível para sanar suas dúvidas!</p>
+        
+            
+        <!--Adiconando Formulário-->
+        <form style="text-align: center;">
+
+            <input type="text" name="Nome" placeholder="Digite seu nome aqui">
+            <br>
+            <input type="tel" name="Telefone para Contato" placeholder="Digite aqui seu telefone">
+            <br>
+            <input type="email" name="E-mail" placeholder="Digite seu e-mail">
+            <br>
+            <input type="text" name="Dúvidas" placeholder="Deixe aqui suas dúvidas">
+            <br>
+            <input type="submit" name="Enviar" value="Enviar" onclick="msg()">
+        </form>
+        <script>
+            function msg(){
+                alert("Recebemos seu recado. Retornaremos assim que possível!")
+            }
+        </script>
+        </div>
+    </main>
+    <footer>
+        <!--Adicionando Rodapé-->
+        Criado por Maria Fonseca, 2024
+    </footer>
+</body>
+</html>
