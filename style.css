@@ -4,6 +4,8 @@
 }
 
 nav{
+    padding-top: 5px;
+    padding-left: 5px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -11,6 +13,17 @@ nav{
     a{
         padding: 8px;
     }
+}
+
+.nav{
+    background-color:  rgba(109, 153, 172, 0.7);
+    border-radius: 4px;
+    height: 35px;
+}
+
+.hov:hover{
+    background-color:  rgba(109, 153, 172, 0.4);
+    border-radius: 4px;
 }
 
 h1{
@@ -54,8 +67,10 @@ p{
 ul{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    text-align: justify;
-    margin-left: 100px;
+}
+
+li{
+    list-style: "- ";
 }
 
 a{
@@ -83,8 +98,9 @@ footer{
     height: 100vh;
     width: 100%;
     background: url(./Imagem/foto01.ico) no-repeat center/cover;
-    backdrop-filter: blur(8px) ;
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(75px) ;
+    -webkit-backdrop-filter: blur(75px);
+
 
     h1{
         font-size: 86px;
@@ -106,6 +122,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(109, 153, 172, 0.6)
     }
     
 #galvao{
@@ -152,8 +169,8 @@ footer{
     height: 35vh;
     width: 100%;
     background: url(./Imagem/foto01.ico) no-repeat center/cover;
-    backdrop-filter: blur(10px) ;
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(75px) ;
+    -webkit-backdrop-filter: blur(875pxpx);
                             
     h1{
         font-size: 86px;
@@ -198,6 +215,7 @@ footer{
  input{
     display: inline;
     justify-content: center;
+    width: 250px;
     font-size: 16px;
     padding: 8px;
     margin: 5px;
@@ -211,8 +229,8 @@ footer{
     height: 35vh;
     width: 100%;
     background: url(./Imagem/foto01.ico) no-repeat center/cover;
-    backdrop-filter: blur(8px) ;
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(75px) ;
+    -webkit-backdrop-filter: blur(75px);
                             
     h1{
         font-size: 86px;
@@ -228,21 +246,17 @@ footer{
 
 #list{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: left;
+    margin-left: 15%;
 }
 
 #otherlist{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: left;
+    margin-left: 15%;
 }
 
-#otherlist2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}

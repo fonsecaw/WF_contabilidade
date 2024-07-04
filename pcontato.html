@@ -14,10 +14,18 @@
     <main>
         <div id="contato">
             <nav>
-                <!--Adiconando Menu-->
-                <a href="index.html">Página Inicial</a>
-                <a href="pservico.html">Serviços Prestados</a>
-                <a href="pcontato.html">Contato</a>
+                <!--Adicionando Menu-->
+                <div class=" nav hov" style="margin: 5px;">
+                    <a href="index.html">Página Inicial</a>
+                </div>
+
+                <div class=" nav hov" style="margin: 5px;">
+                    <a href="pservico.html">Serviços Prestados</a>
+                </div>
+
+                <div class=" nav hov" style="margin: 5px;">
+                    <a href="pcontato.html">Contato</a>
+                </div>
             </nav>
 
             <h1>Contato</h1>
@@ -37,7 +45,7 @@
         </div>
         
         <!--Adicionando botão-->
-        <div style="background-color: rgb(109, 153, 172);
+        <div style="background: rgba(109, 153, 172, 0.6);
             height: 8vh;
             display: flex;
             justify-content: center;
@@ -53,22 +61,30 @@
         
             
         <!--Adiconando Formulário-->
-        <form style="text-align: center;">
+        <form id='formulario' style="text-align: center;">
 
-            <input type="text" name="Nome" placeholder="Digite seu nome aqui">
+            <input type="text" id='nome' name="Nome" placeholder="Digite aqui seu nome" required>
             <br>
-            <input type="tel" name="Telefone para Contato" placeholder="Digite aqui seu telefone">
+            <input type="text" name="Sobrenome" placeholder="Digite aqui seu sobrenome">
             <br>
-            <input type="email" name="E-mail" placeholder="Digite seu e-mail">
+            <input type="tel" name="Telefone para Contato" placeholder="Digite aqui seu telefone" required>
             <br>
-            <input type="text" name="Dúvidas" placeholder="Deixe aqui suas dúvidas">
+            <input type="email" name="E-mail" placeholder="Digite aqui seu e-mail" required>
             <br>
-            <input type="submit" name="Enviar" value="Enviar" onclick="msg()">
+            <input type="text" name="Dúvidas" placeholder="Deixe aqui suas dúvidas" required>
+            <br>
+            <input type="submit" name="Enviar" value="Enviar" style="width: 90px;">
         </form>
         <script>
-            function msg(){
-                alert("Recebemos seu recado. Retornaremos assim que possível!")
-            }
+            document.getElementById('formulario').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita o envio padrão do formulário
+
+                // Captura dos valores dos campos do formulário
+                var nome = document.getElementById('nome').value;
+
+                // Exibe o alerta com os valores capturados
+                window.alert(`Olá, ${nome}. Recebemos seu recado e retornaremos assim que possível!`);
+            });
         </script>
         </div>
     </main>
